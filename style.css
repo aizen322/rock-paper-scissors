@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#1F2937;
+}
+.header{
+    font-family:cursive;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111720;
+    color: #fac650;
+}
+/*-----------------------*/
+.game{
+    font-family: monospace;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.game h2{
+    font-size: 40px;
+}
+.game h3{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.sign-container{
+    display: flex;
+    gap: 100px;
+}
+.sign-box p{
+    font-size: 20px;
+}
+.sign{
+    font-size: 100px;
+}
+.choices{
+    display: flex;
+    font-size: 100px;
+    gap: 50px;
+}
+.choice-container{
+    background-color: #111720;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 24px;
+    border-radius: 10px;
+}
+/*-----------------------*/
+
