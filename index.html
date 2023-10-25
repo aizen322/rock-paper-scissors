@@ -8,44 +8,53 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <section class="header">
+        <div class="header">
             <h1>ROCK &nbsp;PAPER &nbsp;SCISSORS</h1>
-        </section>
+        </div>
 
-        <section class="game">
-            <h2>Choose your weapon</h2>
-            <h3>First to score 5 points wins the game!</h3>
+        <div class="game">
+
+            <div class="game-text">
+                <h2 id="gametext-header">Choose your weapon</h2>
+                <h3 id="gametext-desc">First to score 5 points wins the game!</h3>
+            </div>
+            
 
             <div class="sign-container">
                 <div class="sign-box">
-                    <p>Player</p>
-                    <div class="sign">❔</div>
-                    <p>Score : </p>
+                    <p class="player-name">Player</p>
+                    <p id="player-sign">❔</p>
+                    <p id="player-score">Score : </p>
                 </div>
+                    <h2>VS</h2>
                 <div class="sign-box">
-                    <p>Computer</p>
-                    <div class="sign">❔</div>
-                    <p>Score : </p>
+                    <p class="computer-name">Computer</p>
+                    <p id="computer-sign">❔</p>
+                    <p id="computer-score">Score : </p>
                 </div>
             </div>
-            <div class="choices">
-                <div class="choice-container">
-                    <div class="choice">✊</div>
-                </div>
-    
-                <div class="choice-container">
-                    <div class="choice">✋</div>
-                </div>
-    
-                <div class="choice-container">
-                    <div class="choice">✌</div>
-                </div>
-            </div>
-            
-        </section>
 
-        <section class="footer">
+            <div class="choices">
+                <div class="choice-box">
+                    <button id="btn-rock" onclick="playerChoice(this)">✊</button>
+                    <h3>Rock</h3>
+                </div>
+
+                <div class="choice-box">
+                    <button id="btn-paper" onclick="playerChoice(this)">✋</button>
+                    <h3>Paper</h3>
+                </div>
+
+                <div class="choice-box">
+                    <button id="btn-scissors" onclick="playerChoice(this)">✌</button>
+                    <h3>Scissors</h3>
+                </div>
+            </div>
             
-        </section>
+        </div>
+
+        <div class="footer">
+            <h2>© Created by : Anorax</h2>
+        </div>
     </body>
 </html>

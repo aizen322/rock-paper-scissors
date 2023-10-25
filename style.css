@@ -2,25 +2,31 @@ body{
     margin: 0;
     padding: 0;
     background-color:#1F2937;
+    font-family: monospace;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .header{
     font-family:cursive;
-    font-size: 32px;
+    font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #111720;
     color: #fac650;
+    text-align: center;
 }
 /*-----------------------*/
 .game{
-    font-family: monospace;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 40px;
+    flex: 1;
 }
 .game h2{
     font-size: 40px;
@@ -32,26 +38,72 @@ body{
 }
 .sign-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 100px;
+}
+.sign-container{
+    font-family:cursive;
 }
 .sign-box p{
     font-size: 20px;
 }
-.sign{
-    font-size: 100px;
+.computer-name, #computer-score{
+    color:crimson
 }
+
+.player-name, #player-score{
+    color:aqua;
+}
+#player-sign, #computer-sign{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
 .choices{
     display: flex;
-    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 80px;
     gap: 50px;
 }
-.choice-container{
-    background-color: #111720;
+
+.choice-box{
     display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+}
+.choice-box button{
+    background-color: #111720;
+    border-style: none;
+    height: 150px;
+    width: 150px;
+    font-size: 70px;
     border-radius: 10px;
 }
+.choice-box button:hover{
+    font-size: 85px;
+    border: 1px inset rgba(255, 255, 255, 0.507);
+    background-color: #091629;
+}
 /*-----------------------*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e7ebb4;
+    padding: 16px;
+}
+.footer h2{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
 
