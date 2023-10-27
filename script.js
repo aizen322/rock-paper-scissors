@@ -88,7 +88,7 @@ function result(playerChoice,computerChoice,round){
         document.getElementById("gametext-header").innerHTML = "Round "+round + ": You win!";
         result = "player";
     }
-    ///////////////////////
+    ///////////////////////////////\\\\\\\\\\\\\\\\\\
     else if(playerChoice == "paper" && computerChoice == "rock"){
         document.getElementById("gametext-header").innerHTML = "Round "+round + ": You win!";
         result = "player";
@@ -101,7 +101,7 @@ function result(playerChoice,computerChoice,round){
         document.getElementById("gametext-header").innerHTML = "Round "+round + ": You lose!";
         result = "computer";
     }
-    //////////////////////
+    /////////////////////////////\\\\\\\\\\\\\\\\\\\
     else if(playerChoice == "scissors" && computerChoice == "rock"){
         document.getElementById("gametext-header").innerHTML = "Round "+round + ": You lose!";
         result = "computer";
